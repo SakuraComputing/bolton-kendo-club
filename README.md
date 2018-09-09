@@ -1,4 +1,6 @@
-# bolton-kendo-club
+# Bolton Kendo Club Project
+
+This is a project written using Vue 3.0 and TypeScript, Express, Mongo and Node (API layer).  It's tested using Jest and Nightwatch.
 
 ## Project setup
 ```
