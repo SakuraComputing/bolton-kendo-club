@@ -7,6 +7,20 @@
         </ul>
       </li>
       <li>
+        <router-link to="/about">Where and When</router-link>
+        <ul class="nav__sub-menu">
+          <li>
+            <a href="">Where</a>
+          </li>
+          <li>
+            <a href="">Practise Times</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </li>
+      <li>
         <a href="">Calendar</a>
         <ul class="nav__sub-menu">
         </ul>
@@ -121,7 +135,7 @@ $color__primary: #262788;
 }
 
 .nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-    background: darken($color__primary, 10%);
+    background: lighten($color__primary, 10%);
 }
 
 .nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
