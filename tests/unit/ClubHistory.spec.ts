@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils'
-import ClubHistory from '@/views/ClubHistory.vue'
+import { shallowMount } from '@vue/test-utils';
+import ClubHistory from '@/views/ClubHistory.vue';
 
 describe('ClubHistory.vue', () => {
   it('renders correctly', () => {
