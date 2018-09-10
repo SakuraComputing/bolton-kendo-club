@@ -7,12 +7,6 @@
           <li>
             <a href="">Child Link A</a>
           </li>
-          <li>
-            <a href="">Child Link B</a>
-          </li>
-          <li>
-            <a href="">Child Link C</a>
-          </li>
         </ul>
       </li>
       <li>
@@ -20,12 +14,6 @@
         <ul class="nav__sub-menu">
           <li>
             <a href="">Child Link A</a>
-          </li>
-          <li>
-            <a href="">Child Link B</a>
-          </li>
-          <li>
-            <a href="">Child Link C</a>
           </li>
         </ul>
       </li>
@@ -35,12 +23,6 @@
           <li>
             <a href="">Child Link A</a>
           </li>
-          <li>
-            <a href="">Child Link B</a>
-          </li>
-          <li>
-            <a href="">Child Link C</a>
-          </li>
         </ul>
       </li>
       <li>
@@ -48,12 +30,6 @@
         <ul class="nav__sub-menu">
           <li>
             <a href="">Child Link A</a>
-          </li>
-          <li>
-            <a href="">Child Link B</a>
-          </li>
-          <li>
-            <a href="">Child Link C</a>
           </li>
         </ul>
         <li>
