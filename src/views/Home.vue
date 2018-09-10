@@ -6,19 +6,13 @@
           <p class="box-layout__synopsis">"Welcome to Doshinkenyukai / KNMS"</p>
         </div>
     </div>
-    <HelloWorld msg="Welcome to the Doshinkenyukai / KNMS Kendo website"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
-@Component({
-  components: {
-    HelloWorld
-  },
-})
+@Component
 export default class Home extends Vue {}
 </script>
 

@@ -26,7 +26,7 @@
         </ul>
       </li>
       <li>
-        <router-link to="/about">What is Kendo</router-link>
+        <router-link to="/whatskendo">What is Kendo</router-link>
         <ul class="nav__sub-menu">
           <li>
             <a href="">Child Link A</a>
@@ -71,7 +71,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow-x: hidden;
 }
 /*------------------------------------*\
     Settings
