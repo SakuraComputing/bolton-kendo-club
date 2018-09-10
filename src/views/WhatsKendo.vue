@@ -74,7 +74,7 @@
 <style scoped>
 
 .whats-kendo {
-  margin-top: 8%;
+  margin: 8%;
 }
 
 </style>
