@@ -23,6 +23,31 @@ export default new Router({
       path: '/whatskendo',
       name: 'whatskendo',
       component: () => import(/* webpackChunkName: "about" */ './views/WhatsKendo.vue')
+    },
+    {
+      path: '/links',
+      name: 'links',
+      component: () => import('./views/KendoLinks.vue')
+    },
+    {
+      path: '/study',
+      name: 'study',
+      component: () => import('./views/KendoStudy.vue')
+    },
+    {
+      path: '/videos',
+      name: 'videos',
+      component: () => import('./views/KendoVideo.vue')
+    },
+    {
+      path: '/photos',
+      name: 'photos',
+      component: () => import('./views/KendoPhoto.vue')
+    },
+    {
+      path: '/history',
+      name: 'history',
+      component: () => import('./views/ClubHistory.vue')
     }
   ]
 })

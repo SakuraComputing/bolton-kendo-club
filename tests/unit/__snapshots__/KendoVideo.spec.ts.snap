@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KendoVideo.vue renders correctly 1`] = `
+<div class="kendo-video">
+  <h1>Kendo Video</h1>
+  <p>Need to add in favourite videos</p>
+</div>
+`;

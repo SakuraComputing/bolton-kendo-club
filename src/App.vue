@@ -26,6 +26,11 @@
         </ul>
       </li>
       <li>
+        <router-link to="/history">Club History</router-link>
+        <ul class="nav__sub-menu">
+        </ul>
+      </li>
+      <li>
         <router-link to="/whatskendo">What is Kendo</router-link>
         <ul class="nav__sub-menu">
           <li>
@@ -34,19 +39,18 @@
         </ul>
       </li>
       <li>
-        <a href="">Kendo Study</a>
+        <router-link to="/study">Kendo Study</router-link>
         <ul class="nav__sub-menu">
         </ul>
         <li>
-          <a href="">Kendo Links</a>
+          <router-link to="/links">Kendo Links</router-link>
         </li>
         <li>
-          <a href="">Kendo Photograph's</a>
+          <router-link to="/photos">Kendo Photograph's</router-link>
         </li>
         <li>
-          <a href="">Kendo Videos</a>
+          <router-link to="/videos">Kendo Videos</router-link>
         </li>
-      </li>
     </ul>
     <router-view/>
   </div>

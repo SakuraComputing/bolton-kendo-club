@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KendoStudy.vue renders correctly 1`] = `
+<div class="kendo-study">
+  <h1>Kendo Study</h1>
+  <p>Need to work out what to do with all the documentation</p>
+</div>
+`;
