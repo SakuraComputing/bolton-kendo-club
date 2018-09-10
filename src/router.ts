@@ -48,6 +48,11 @@ export default new Router({
       path: '/history',
       name: 'history',
       component: () => import('./views/ClubHistory.vue')
+    },
+    {
+      path: '/calendar',
+      name: 'calendar',
+      component: () => import('./views/Calendar.vue')
     }
   ]
 })

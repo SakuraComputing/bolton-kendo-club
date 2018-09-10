@@ -21,7 +21,7 @@
         </ul>
       </li>
       <li>
-        <a href="">Calendar</a>
+        <router-link to="/calendar">Calendar</router-link>
         <ul class="nav__sub-menu">
         </ul>
       </li>
