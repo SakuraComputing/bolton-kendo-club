@@ -4,17 +4,11 @@
       <li>
         <router-link to="/">Home</router-link>
         <ul class="nav__sub-menu">
-          <li>
-            <a href="">Child Link A</a>
-          </li>
         </ul>
       </li>
       <li>
         <a href="">Calendar</a>
         <ul class="nav__sub-menu">
-          <li>
-            <a href="">Child Link A</a>
-          </li>
         </ul>
       </li>
       <li>
@@ -28,9 +22,6 @@
       <li>
         <a href="">Kendo Study</a>
         <ul class="nav__sub-menu">
-          <li>
-            <a href="">Child Link A</a>
-          </li>
         </ul>
         <li>
           <a href="">Kendo Links</a>
@@ -66,13 +57,14 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-top: 0;
 }
 /*------------------------------------*\
     Settings
 \*------------------------------------*/
 
 $spacing: 1em;
-$color__primary: #22917e;
+$color__primary: #262788;
 
 
 /*------------------------------------*\
@@ -82,10 +74,12 @@ $color__primary: #22917e;
     float: left; /* Clear floats */
     width: 100%;
     margin-bottom: $spacing;
-    padding: 0 $spacing;
+    // padding: 0 $spacing;
     list-style: none;
-    font-weight: bold;
+    // font-weight: bold;
     background: $color__primary;
+    margin: 0;
+    border-bottom: 1px solid #fff;
 }
 
 .nav li {
@@ -103,7 +97,7 @@ $color__primary: #22917e;
 
 .nav a:hover{
     color: #fff;
-    background: darken($color__primary, 5%);
+    background: lighten($color__primary, 5%);
 }
 
 /*--- DROPDOWN ---*/

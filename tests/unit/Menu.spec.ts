@@ -7,7 +7,6 @@ describe('Menu', () => {
         const wrapper = shallowMount(Menu, {
           propsData: { msg }
         })
-        expect(wrapper.text()).toMatch(msg)
-    
+        expect(wrapper.text()).toMatch(msg)   
     })
 });
