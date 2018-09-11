@@ -45,11 +45,8 @@ router.post(
         if(req.body.title) clubFields.title = req.body.title;
         if(req.body.clubHistory) clubFields.clubHistory = req.body.clubHistory;
         
-        console.log(("Here", req.params.clubName));
-        
         Club.findOne({ clubName: req.params.clubName })
         .then(club => {
-            console.log("Is it getting here?", club);
             if(club) {
                 Club.findOneAndUpdate(
                     { clubName: req.params.clubName },
@@ -61,7 +58,6 @@ router.post(
         })
         .catch(err => res.json(err))
     }
-    // new Club(clubFields).save().then(club => res.json(club))
 );
 module.exports = router;
 
