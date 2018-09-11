@@ -26,6 +26,13 @@ app.use(passport.initialize());
 // Passport Config
 require('../config/passport')(passport);
 
+// Allow CORS
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 // Use Routes 
 app.use('/api/users', users);
 app.use('/api/club', club);

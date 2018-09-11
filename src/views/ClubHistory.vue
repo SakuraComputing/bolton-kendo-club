@@ -1,13 +1,39 @@
 <template>
     <div class="club-history">
         <h1>KNMS and Doshinkenyukai Club History</h1>
-        <p>Need to add in some text around the clubs history</p>
+        <p>{{ history.clubHistory }}</p>
     </div>    
 </template>
 
+<script>
+
+import axios from 'axios';
+
+export default {
+    data() {
+        return {
+            history: ''
+        }
+    },
+    created: function() {
+        this.fetchHistory();
+    },
+    methods: {
+        fetchHistory() {
+            let uri = 'http://localhost:5000/api/club/Bolton Kendo Club';
+            axios.get(uri).then((response) => {
+                this.history = response.data
+            });
+        }
+    }
+}
+
+</script>
+
+
 <style>
 
-.kendo-video {
+.club-history {
     margin: 8%;
 }
 </style>
