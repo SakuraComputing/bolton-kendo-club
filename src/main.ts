@@ -3,8 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+import VueYoutube from 'vue-youtube'
 
 Vue.config.productionTip = false
+
+Vue.use(VueYoutube)
 
 new Vue({
   router,
