@@ -101,17 +101,17 @@ router.post('/address', passport.authenticate('jwt', { session: false }), (req,r
     Club.findOne({ clubName: req.body.clubName })
         .then(club => {
             const newAddress = {
-                name: req.body.name,
-                telephoneNumber: req.body.telephoneNumber,
-                email: req.body.email,
+                address1: req.body.address1,
+                address2: req.body.address2,
+                address3: req.body.address3,
+                address4: req.body.address4,
+                postcode: req.body.postcode
             };
 
-            // Add to experience array
-            console.log(newAddress);
-            club.contacts.unshift(newAddress);
-
+            club.addresses.unshift(newAddress);
             club.save().then(club => res.json(club));
         })
+        .catch(err => console.log(err));
 });
 // @route POST api/club/practice
 // @desc Add address
@@ -137,6 +137,7 @@ router.post('/practice', passport.authenticate('jwt', { session: false }), (req,
 
             club.save().then(club => res.json(club));
         })
+        
 });
 module.exports = router;
 

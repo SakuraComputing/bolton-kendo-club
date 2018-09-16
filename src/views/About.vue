@@ -3,12 +3,12 @@
   <div class="about-container">
       <div class="about-section">
         <h2>Where we practise</h2>
-        <ul class="address-list">
-            <li>Little Lever School Bolton</li>
-            <li>Church Street</li>
-            <li>Little Lever</li>
-            <li>Bolton</li>
-            <li>BL3 1BT</li>
+        <ul class="address-list" v-for="address in club.addresses" :key="address.postcode">
+            <div>{{ address.address1 }}</div>
+            <div>{{ address.address2 }}</div>
+            <div>{{ address.address3 }}</div>
+            <div>{{ address.address4 }}</div>
+            <div>{{ address.postcode }}</div>
         </ul>
       </div>
       <div class="about-section">

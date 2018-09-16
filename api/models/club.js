@@ -13,33 +13,6 @@ const ClubSchema = new Schema ({
     clubHistory: {
         type: String
     },
-    // addresses: [
-    //     {
-    //         address1: String,
-    //         required: true
-    //     },
-    //     {
-    //         address2: String,
-    //         required: true
-    //     },
-    //     {
-    //         address3: String
-    //     },
-    //     {
-    //         address4: String
-    //     },
-    //     {
-    //         postcode: String
-    //     },
-    //     {
-    //         practices: [
-    //             {
-    //                 time: String,
-    //                 required: true
-    //             }
-    //         ]
-    //     }
-    // ],
     contacts: [
         {
             name: {
@@ -51,6 +24,27 @@ const ClubSchema = new Schema ({
             },
             email: { 
                 type:String
+            }
+        }
+    ],
+    addresses: [
+        {
+            address1: {
+                type: String,
+                required: true            
+            },
+            address2: {
+                type: String,
+                required: true
+            },
+            address3: {
+                type: String
+            },
+            address4: {
+                type: String
+            },
+            postcode: {
+                type: String
             }
         }
     ],
