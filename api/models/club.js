@@ -42,13 +42,16 @@ const ClubSchema = new Schema ({
     // ],
     contacts: [
         {
-            name: String
-        },
-        {
-            telNo: String
-        },
-        {
-            email: String
+            name: {
+                type: String,
+                required: true
+            }, 
+            telephoneNumber: {
+                type: String
+            },
+            email: { 
+                type:String
+            }
         }
     ],
     videos: [

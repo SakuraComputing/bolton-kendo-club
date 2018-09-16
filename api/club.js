@@ -75,11 +75,12 @@ router.post('/contact', passport.authenticate('jwt', { session: false }), (req,r
         .then(club => {
             const newContact = {
                 name: req.body.name,
-                telNo: req.body.telNo,
+                telephoneNumber: req.body.telephoneNumber,
                 email: req.body.email,
             };
 
             // Add to experience array
+            console.log(newContact);
             club.contacts.unshift(newContact);
 
             club.save().then(club => res.json(club));

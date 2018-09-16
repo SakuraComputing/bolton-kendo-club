@@ -17,11 +17,51 @@
       </div>
       <div class="about-section">
           <h2>Who to Contact</h2>
-          <p>Mark Needham 5th Dan</p>
+          <!-- <p>{{ contact.contacts }}</p> -->
+        
+        <ul>
+            <li class="contact-list" v-for="contact in contacts" :key="contact.name">
+                <div>
+                    Name: {{ contact.name }}
+                </div>
+                <div>
+                    Contact Number: {{ contact.telephoneNumber}}
+                </div>
+                <div>
+                    Email: {{ contact.email }}
+                </div>
+            </li>
+        </ul>
+
       </div>
   </div>
 
 </template>
+
+<script>
+
+import axios from 'axios';
+
+export default {
+    data() {
+        return {
+            contacts: ''
+        }
+    },
+    created: function() {
+        this.fetchContacts();
+    },
+    methods: {
+        fetchContacts() {
+            let uri = 'http://localhost:5000/api/club/Bolton Kendo Club';
+            axios.get(uri).then((response) => {
+                this.contacts = response.data.contacts
+            });
+        }
+    }
+}
+
+</script>
 
 <style scoped>
 
@@ -38,6 +78,10 @@
 
 .address-list {
     list-style-type: none;
+}
+
+.contact-list {
+    list-style-type: none
 }
 
 </style>
