@@ -13,6 +13,44 @@ const ClubSchema = new Schema ({
     clubHistory: {
         type: String
     },
+    // address: [
+    //     {
+    //         address1: String,
+    //         required: true
+    //     },
+    //     {
+    //         address2: String,
+    //         required: true
+    //     },
+    //     {
+    //         address3: String
+    //     },
+    //     {
+    //         address4: String
+    //     },
+    //     {
+    //         postcode: String
+    //     },
+    //     {
+    //         practices: [
+    //             {
+    //                 time: String,
+    //                 required: true
+    //             }
+    //         ]
+    //     }
+    // ],
+    contacts: [
+        {
+            name: String
+        },
+        {
+            telNo: String
+        },
+        {
+            email: String
+        }
+    ],
     videos: [
         {
             etag: {

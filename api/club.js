@@ -30,7 +30,7 @@ router.get('/:clubName', (req, res) => {
 router.get('/test', (req, res) => res.json({msg: " works"}));
 
 router.post(
-    '/:clubName',
+    '/clubName/:clubName',
     passport.authenticate('jwt', { session: false}),
     (req,res) => {
 
@@ -59,5 +59,31 @@ router.post(
         .catch(err => res.json(err))
     }
 );
+
+// @route POST api/club/contact
+// @desc Add contact to club
+// @access Private
+router.post('/contact', passport.authenticate('jwt', { session: false }), (req,res) => {
+    // const { errors, isValid } = validateExperienceInput(req.body);
+
+    // Check validation
+    // if(!isValid) {
+    //     return res.status(400).json(errors);
+    // }
+
+    Club.findOne({ clubName: req.body.clubName })
+        .then(club => {
+            const newContact = {
+                name: req.body.name,
+                telNo: req.body.telNo,
+                email: req.body.email,
+            };
+
+            // Add to experience array
+            club.contacts.unshift(newContact);
+
+            club.save().then(club => res.json(club));
+        })
+});
 module.exports = router;
 

@@ -12,11 +12,11 @@
         </ul>
       </div>
       <div class="about-section">
-          <h2>When</h2>
+          <h2>Practise Times</h2>
           <p>Sunday 10:00am - 12:00pm (2 Hours)</p>
       </div>
       <div class="about-section">
-          <h2>Contact</h2>
+          <h2>Who to Contact</h2>
           <p>Mark Needham 5th Dan</p>
       </div>
   </div>
