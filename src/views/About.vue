@@ -12,15 +12,25 @@
         </ul>
       </div>
       <div class="about-section">
-          <h2>Practise Times</h2>
-          <p>Sunday 10:00am - 12:00pm (2 Hours)</p>
+        <h2>Practise Times</h2>
+        <ul>    
+            <li class="about-list" v-for="practise in club.practices" :key="practise.venue">
+                <div>
+                    Venue: {{ practise.venue }}
+                </div>
+                <div>
+                    Time: {{ practise.time }}
+                </div>
+            </li>
+        </ul>
+
       </div>
       <div class="about-section">
           <h2>Who to Contact</h2>
           <!-- <p>{{ contact.contacts }}</p> -->
         
         <ul>
-            <li class="contact-list" v-for="contact in contacts" :key="contact.name">
+            <li class="about-list" v-for="contact in club.contacts" :key="contact.name">
                 <div>
                     Name: {{ contact.name }}
                 </div>
@@ -45,17 +55,18 @@ import axios from 'axios';
 export default {
     data() {
         return {
-            contacts: ''
+            contacts: '',
+            practices: ''
         }
     },
     created: function() {
-        this.fetchContacts();
+        this.fetchClubDetails();
     },
     methods: {
-        fetchContacts() {
+        fetchClubDetails() {
             let uri = 'http://localhost:5000/api/club/Bolton Kendo Club';
             axios.get(uri).then((response) => {
-                this.contacts = response.data.contacts
+                this.club = response.data
             });
         }
     }
@@ -80,7 +91,7 @@ export default {
     list-style-type: none;
 }
 
-.contact-list {
+.about-list {
     list-style-type: none
 }
 

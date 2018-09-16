@@ -13,7 +13,7 @@ const ClubSchema = new Schema ({
     clubHistory: {
         type: String
     },
-    // address: [
+    // addresses: [
     //     {
     //         address1: String,
     //         required: true
@@ -51,6 +51,18 @@ const ClubSchema = new Schema ({
             },
             email: { 
                 type:String
+            }
+        }
+    ],
+    practices: [
+        {
+            venue: {
+                type: String,
+                required: true
+            },
+            time: {
+                type: String,
+                required: true
             }
         }
     ],

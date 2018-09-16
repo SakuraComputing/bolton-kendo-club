@@ -86,5 +86,57 @@ router.post('/contact', passport.authenticate('jwt', { session: false }), (req,r
             club.save().then(club => res.json(club));
         })
 });
+
+// @route POST api/club/address
+// @desc Add address
+// @access Private
+router.post('/address', passport.authenticate('jwt', { session: false }), (req,res) => {
+    // const { errors, isValid } = validateExperienceInput(req.body);
+
+    // Check validation
+    // if(!isValid) {
+    //     return res.status(400).json(errors);
+    // }
+
+    Club.findOne({ clubName: req.body.clubName })
+        .then(club => {
+            const newAddress = {
+                name: req.body.name,
+                telephoneNumber: req.body.telephoneNumber,
+                email: req.body.email,
+            };
+
+            // Add to experience array
+            console.log(newAddress);
+            club.contacts.unshift(newAddress);
+
+            club.save().then(club => res.json(club));
+        })
+});
+// @route POST api/club/practice
+// @desc Add address
+// @access Private
+router.post('/practice', passport.authenticate('jwt', { session: false }), (req,res) => {
+    // const { errors, isValid } = validateExperienceInput(req.body);
+
+    // Check validation
+    // if(!isValid) {
+    //     return res.status(400).json(errors);
+    // }
+
+    Club.findOne({ clubName: req.body.clubName })
+        .then(club => {
+            const newPractice = {
+                venue: req.body.venue,
+                time: req.body.time,
+            };
+
+            // Add to experience array
+            console.log(newPractice);
+            club.practices.unshift(newPractice);
+
+            club.save().then(club => res.json(club));
+        })
+});
 module.exports = router;
 
