@@ -14,21 +14,19 @@
       <div class="about-section">
         <h2>Practise Times</h2>
         <ul>    
-            <li class="about-list" v-for="practise in club.practices" :key="practise.venue">
+            <li class="about-list" v-for="practice in club.practices" :key="practice.venue">
                 <div>
-                    Venue: {{ practise.venue }}
+                    Venue: {{ practice.venue }}
                 </div>
                 <div>
-                    Time: {{ practise.time }}
+                    Time: {{ practice.time }}
                 </div>
             </li>
         </ul>
 
       </div>
       <div class="about-section">
-          <h2>Who to Contact</h2>
-          <!-- <p>{{ contact.contacts }}</p> -->
-        
+        <h2>Who to Contact</h2>
         <ul>
             <li class="about-list" v-for="contact in club.contacts" :key="contact.name">
                 <div>
@@ -55,8 +53,7 @@ import axios from 'axios';
 export default {
     data() {
         return {
-            contacts: '',
-            practices: ''
+            club: ''        
         }
     },
     created: function() {
