@@ -34,7 +34,8 @@ export default {
 <style>
 
 .club-history {
-    margin: 8%;
+    margin: 10% 14%;
+    font-size: 120%;
 }
 </style>
 

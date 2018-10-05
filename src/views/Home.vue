@@ -3,7 +3,7 @@
     <div class="box-layout">
         <div class="box-layout__box">
           <h1 class="box-layout__title">Bolton Kendo Club</h1>
-          <p class="box-layout__synopsis">"Welcome to Doshinkenyukai / KNMS"</p>
+          <p class="box-layout__synopsis">"Welcome to KNMS / Doshinkenyukai"</p>
         </div>
     </div>
   </div>
