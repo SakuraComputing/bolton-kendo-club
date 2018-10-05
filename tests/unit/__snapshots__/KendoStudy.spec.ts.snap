@@ -2,7 +2,16 @@
 
 exports[`KendoStudy.vue renders correctly 1`] = `
 <div class="kendo-study">
-  <h1>Kendo Study</h1>
-  <p>Need to work out what to do with all the documentation</p>
+  <h1>Hanshi Says</h1>
+  <p>Sumi Sensei Hanshi Hachi-dan</p> <img src="http://www.kendoguide.org/wp-content/uploads/2011/06/Masatake-Sumi-sensei.jpg" alt="Sumi Sensei">
+  <p>To make ippon you need to meet the following criteria</p>
+  <ul class="kendo-study-list">
+    <li>1. Full Spirit</li>
+    <li>2. Proper Posture</li>
+    <li>3. Cut with the proper part of the shinai</li>
+    <li>4. Hit proper part of armour</li>
+    <li>5. Correct direction of sword edge</li>
+    <li>6. Zanshin</li>
+  </ul>
 </div>
 `;

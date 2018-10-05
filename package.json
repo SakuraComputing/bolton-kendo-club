@@ -9,7 +9,8 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "api-server": "nodemon server/server.js",
-    "dev": "concurrently \"yarn run api-server\" \"yarn run serve\""
+    "dev": "concurrently \"yarn run api-server\" \"yarn run serve\"",
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
