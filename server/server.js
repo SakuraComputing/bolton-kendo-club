@@ -39,4 +39,11 @@ app.use('/api/club', club);
 
 const port = process.env.PORT || 5000;
 
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static(__dirname + "/dist/"));
+        app.get(/.*/, function(req, res) {
+        res.sendFile(__dirname + "/dist/index.html");
+    });
+}
+console.log("Whats going on?", process.env.NODE_ENV);
 app.listen(port, () => console.log(`Server running on port ${port}`));
