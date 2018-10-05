@@ -125,6 +125,7 @@ export default {
 
 .about-container {
     margin: 8%;
+    background-color: rgb(244, 246, 250);
 }
 
 .about-section {
@@ -134,12 +135,16 @@ export default {
     /* height: 300px; */
 }
 
+.about-section:hover {
+    background-color: rgb(220, 235, 243);
+}
+
 .address-list {
     list-style-type: none;
 }
 
-.map-container {
-    /* display: inline; */
+.map-container:hover {
+    background-color: rgb(220, 235, 243);
 }
 
 .about-list {

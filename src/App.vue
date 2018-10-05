@@ -9,7 +9,7 @@
       <li>
         <router-link to="/about">Where and When</router-link>
         <ul class="nav__sub-menu">
-          <li>
+          <!-- <li>
             <a href="">Where</a>
           </li>
           <li>
@@ -17,11 +17,11 @@
           </li>
           <li>
             <a href="">Contact</a>
-          </li>
+          </li> -->
         </ul>
       </li>
       <li>
-        <router-link to="/calendar">Calendar</router-link>
+        <!-- <router-link to="/calendar">Calendar</router-link> -->
         <ul class="nav__sub-menu">
         </ul>
       </li>
@@ -33,9 +33,6 @@
       <li>
         <router-link to="/whatskendo">What is Kendo</router-link>
         <ul class="nav__sub-menu">
-          <li>
-            <a href="">Child Link A</a>
-          </li>
         </ul>
       </li>
       <li>
