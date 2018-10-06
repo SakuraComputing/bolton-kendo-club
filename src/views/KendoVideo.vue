@@ -23,9 +23,8 @@
     },
     methods: {
         fetchVideos() {
-            let uri = 'http://localhost:5000/api/club/Bolton Kendo Club';
-            axios.get(uri).then((response) => {
-                this.videos = response.data.videos
+            axios.get('/api/club').then((response) => {
+                this.videos = response.data[0].videos
             });
         }
     }

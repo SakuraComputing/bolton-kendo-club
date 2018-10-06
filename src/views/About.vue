@@ -87,9 +87,8 @@ export default {
     },
     methods: {
         fetchClubDetails() {
-            let uri = 'http://localhost:5000/api/club/Bolton Kendo Club';
-            axios.get(uri).then((response) => {
-                this.club = response.data
+            axios.get('/api/club').then((response) => {
+                this.club = response.data[0];
             });
         },
         // receives a place object via the autocomplete component
