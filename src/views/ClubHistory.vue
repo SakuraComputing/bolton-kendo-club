@@ -20,9 +20,8 @@ export default {
     },
     methods: {
         fetchHistory() {
-            let uri = 'http://localhost:5000/api/club/Bolton Kendo Club';
-            axios.get(uri).then((response) => {
-                this.history = response.data
+            axios.get('/api/club').then((response) => {
+                this.history = response.data[0]
             });
         }
     }

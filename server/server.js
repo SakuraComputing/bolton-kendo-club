@@ -45,5 +45,5 @@ if(process.env.NODE_ENV === 'production') {
         res.sendFile(__dirname + "/dist/index.html");
     });
 }
-console.log("Whats going on?", process.env.NODE_ENV);
+console.log("Whats going on?");
 app.listen(port, () => console.log(`Server running on port ${port}`));
