@@ -37,7 +37,7 @@ app.use(function(req, res, next) {
 app.use('/api/users', users);
 app.use('/api/club', club);
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static(__dirname + "/dist/"));
