@@ -10,7 +10,8 @@
     "test:e2e": "vue-cli-service test:e2e",
     "api-server": "nodemon server/server.js",
     "dev": "concurrently \"yarn run api-server\" \"yarn run serve\"",
-    "start": "node server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "dependencies": {
     "axios": "^0.18.0",
