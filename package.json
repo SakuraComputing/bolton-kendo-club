@@ -14,7 +14,7 @@
     "api-server": "nodemon server/server.js",
     "dev": "concurrently \"yarn run api-server\" \"yarn run serve\"",
     "start": "node server/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix src && npm run build --prefix src"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "dependencies": {
     "@types/node": "^10.11.4",
