@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.fbbd2dcc43f0742f4e109d397f70e53a.js"
+  "/precache-manifest.fba08065b73507982b7fcbf06f0e1d42.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "bolton-kendo-club"});

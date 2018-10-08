@@ -3,7 +3,7 @@
         <h1>Kendo Photographs</h1>
         
         <div class="image">
-            <img v-for="img in images" v-bind:src="img" alt="No image">
+            <img v-for="img in images" v-bind:src="img" v-bind:key="img" alt="No image">
         </div>
     </div>    
 </template>
