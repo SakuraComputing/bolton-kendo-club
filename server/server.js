@@ -24,14 +24,14 @@ mongoose
 app.use(passport.initialize());
 
 // Passport Config
-// require('../config/passport')(passport);
+require('../config/passport')(passport);
 
 // Allow CORS
-// app.use(function(req, res, next) {
-//     res.header("Access-Control-Allow-Origin", "*");
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//     next();
-// });
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 // Use Routes 
 app.use('/api/users', users);
@@ -45,5 +45,5 @@ if(process.env.NODE_ENV === 'production') {
         res.sendFile(__dirname + "/dist/index.html");
     });
 }
-console.log("Whats going on?");
+console.log("Whats going on?", process.env.NODE_ENV);
 app.listen(port, () => console.log(`Server running on port ${port}`));
