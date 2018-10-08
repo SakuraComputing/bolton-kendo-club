@@ -13,7 +13,7 @@
     "test:e2e": "vue-cli-service test:e2e",
     "api-server": "nodemon server/server.js",
     "dev": "concurrently \"yarn run api-server\" \"yarn run serve\"",
-    "start": "node server/server.js",
+    "start": "node server.js",
     "heroku-postbuild": "npm install --only=dev --n-shrinkwrap && npm run build"
   },
   "dependencies": {
