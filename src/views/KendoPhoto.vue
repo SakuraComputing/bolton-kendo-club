@@ -12,7 +12,7 @@
     export default {
         data() {
             return {
-                images:['https://i0.wp.com/kenshi247.net/wp-content/uploads/2016/12/2016-kyoto1.jpg?w=800&ssl=1','http://www.jsnw.org.uk/photos/storage/cache/images/000/769/033-DSC-0403,medium_large.1463599525.jpg']
+                images:['https://i0.wp.com/kenshi247.net/wp-content/uploads/2016/12/2016-kyoto1.jpg?w=800&ssl=1','https://www.jsnw.org.uk/photos/storage/cache/images/000/769/033-DSC-0403,medium_large.1463599525.jpg']
             }
         }
     }
