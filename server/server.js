@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 
-const users = require('../api/users');
-const club = require('../api/club');
+const users = require('../api/users.js');
+const club = require('../api/club.js');
 
 const app = express();
 
@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // DB Config
-const db = require('../config/keys').mongoURI;
+const db = require('../config/keys.js').mongoURI;
 
 // Connect to Mongo DB
 mongoose
@@ -24,7 +24,7 @@ mongoose
 app.use(passport.initialize());
 
 // Passport Config
-require('../config/passport')(passport);
+require('../config/passport.js')(passport);
 
 // Allow CORS
 app.use(function(req, res, next) {
