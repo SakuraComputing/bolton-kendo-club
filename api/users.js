@@ -67,8 +67,6 @@ router.post('/login', (req, res) => {
     const email = req.body.email;
     const password = req.body.password
 
-    const tempKey = 'secret';
-
     // Find USer by password
     User.findOne({ email })
     .then(user => {
@@ -87,8 +85,7 @@ router.post('/login', (req, res) => {
                 //Sign Token
                 jwt.sign(
                     payload, 
-                    tempKey,
-                    //keys.secretOrKey, 
+                    keys.secretOrKey, 
                     { expiresIn: 3600 }, 
                     (err, token) => {
                         res.json({
