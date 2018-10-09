@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Register.vue renders correctly 1`] = `
+<div>
+  <h4>Register</h4>
+  <form><label for="name">Name</label>
+    <div><input id="name" type="text" required="required" autofocus="autofocus"></div> <label for="email">E-Mail Address</label>
+    <div><input id="email" type="email" required="required"></div> <label for="password">Password</label>
+    <div><input id="password" type="password" required="required"></div> <label for="password-confirm">Confirm Password</label>
+    <div><input id="password-confirm" type="password" required="required"></div>
+    <div><button type="submit">Register</button></div>
+  </form>
+</div>
+`;
