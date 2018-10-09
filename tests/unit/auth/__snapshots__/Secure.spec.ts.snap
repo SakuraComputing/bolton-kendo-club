@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Secure.vue renders correctly 1`] = `
+<div>
+  <h1>This page is for Members Only</h1>
+</div>
+`;
