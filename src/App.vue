@@ -48,6 +48,9 @@
         <li>
           <router-link to="/videos">Kendo Videos</router-link>
         </li>
+        <li>
+          <router-link to="/login">Login / Register</router-link><span v-if="isLoggedIn"> | <a @click="logout"></a></span>
+        </li>
     </ul>
     <router-view/>
   </div>
@@ -62,7 +65,17 @@
       Menu
     },
   })
-  export default class App extends Vue {}
+  export default class App extends Vue {
+    get isLoggedIn() {
+      return this.$store.getters.isLoggedIn
+    }
+    logout() {
+      return this.$store.dispatch('logout')
+      .then(() => {
+        this.$router.push('/login')
+      })
+    }
+  }
 </script>
 
 <style lang="scss">
