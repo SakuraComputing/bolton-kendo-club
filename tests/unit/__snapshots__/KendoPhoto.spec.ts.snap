@@ -3,6 +3,6 @@
 exports[`KendoPhoto.vue renders correctly 1`] = `
 <div class="kendo-photo">
   <h1>Kendo Photographs</h1>
-  <div class="image"><img src="https://i0.wp.com/kenshi247.net/wp-content/uploads/2016/12/2016-kyoto1.jpg?w=800&amp;ssl=1" alt="No image"><img src="http://www.jsnw.org.uk/photos/storage/cache/images/000/769/033-DSC-0403,medium_large.1463599525.jpg" alt="No image"></div>
+  <div class="image"><img src="https://i0.wp.com/kenshi247.net/wp-content/uploads/2016/12/2016-kyoto1.jpg?w=800&amp;ssl=1" alt="No image"><img src="https://www.jsnw.org.uk/photos/storage/cache/images/000/769/033-DSC-0403,medium_large.1463599525.jpg" alt="No image"></div>
 </div>
 `;
