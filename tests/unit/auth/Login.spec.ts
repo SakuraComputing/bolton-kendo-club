@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import Login from '@/views/Login.vue'
+import Login from '@/views/auth/Login.vue'
 
 describe('Login.vue', () => {
   it('renders correctly', () => {
