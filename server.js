@@ -31,7 +31,6 @@ require('./config/passport')(passport);
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.header('Content-Type', 'application/javascript');
     next();
 });
 
@@ -47,7 +46,9 @@ if(process.env.NODE_ENV === 'production') {
     //     res.sendFile(__dirname + "/dist/index.html");
     // });
     app.use(express.static('/dist'));
-
+    app.get("/service-worker.js", (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'dist', 'service-worker.js'));
+      });
     app.get('*', (req,res) => {
         res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
     });
