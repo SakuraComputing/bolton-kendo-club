@@ -17,7 +17,9 @@ clone from Github
 yarn install
 ```
 
-### Compiles and hot-reloads for development using concurrently to run the App server on port 8080 and the dev server on port 5000
+### Running the Application Locally
+
+Compiles and hot-reloads for development using concurrently to run the App server on port 8080 and the dev server on port 5000
 ```
 yarn run dev
 ```
