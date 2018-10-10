@@ -18,7 +18,7 @@ const db = require('../config/keys').mongoURI;
 // Connect to Mongo DB
 mongoose
     .connect(db)
-    .then(() => console.log('Mongo DB connected'))
+    .then(() => console.log('Mongo DB connected server.js'))
     .catch(err => console.log(err));
 
 app.use(passport.initialize());
@@ -40,10 +40,16 @@ app.use('/api/club', club);
 const port = process.env.PORT || 5000;
 
 if(process.env.NODE_ENV === 'production') {
-    app.use(express.static(__dirname + "/dist/"));
-        app.get(/.*/, function(req, res) {
-        res.sendFile(__dirname + "/dist/index.html");
+    // app.use(express.static(__dirname + "/dist/"));
+    //     app.get(/.*/, function(req, res) {
+    //     res.sendFile(__dirname + "/dist/index.html");
+    // });
+    app.use(express.static('client/build'));
+
+    app.get('*', (req,res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
+
 }
 console.log("Whats going on?", process.env.NODE_ENV);
 app.listen(port, () => console.log(`Server running on port ${port}`));
