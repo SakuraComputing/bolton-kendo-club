@@ -45,10 +45,10 @@ if(process.env.NODE_ENV === 'production') {
     //     app.get(/.*/, function(req, res) {
     //     res.sendFile(__dirname + "/dist/index.html");
     // });
-    app.use(express.static('client/build'));
+    app.use(express.static('/dist'));
 
     app.get('*', (req,res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+        res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
     });
 
 }
