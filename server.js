@@ -19,7 +19,7 @@ const db = require('./config/keys').mongoURI;
 // Connect to Mongo DB
 mongoose
     .connect(db)
-    .then(() => console.log('Mongo DB connected server.js'))
+    .then(() => console.log('Mongo DB connected server.js', db))
     .catch(err => console.log(err));
 
 app.use(passport.initialize());
@@ -45,9 +45,9 @@ if(process.env.NODE_ENV === 'production') {
     //     app.get(/.*/, function(req, res) {
     //     res.sendFile(__dirname + "/dist/index.html");
     // });
-    app.use(express.static('/dist'));
-    app.get('*', (req,res) => {
-        res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+    app.use(express.static(path.join(__dirname + '/dist')));
+    app.get('/*', (req,res) => {
+        res.sendFile(path.join(__dirname, '/dist/index.html'));
     });
 
 }
