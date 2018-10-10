@@ -40,10 +40,16 @@ app.use('/api/club', club);
 const port = process.env.PORT || 5000;
 
 if(process.env.NODE_ENV === 'production') {
-    app.use(express.static(__dirname + "/dist/"));
-        app.get(/.*/, function(req, res) {
-        res.sendFile(__dirname + "/dist/index.html");
+    // app.use(express.static(__dirname + "/dist/"));
+    //     app.get(/.*/, function(req, res) {
+    //     res.sendFile(__dirname + "/dist/index.html");
+    // });
+    // Set static folder
+    app.use(express.static('client/build'));
+
+    app.get('*', (req,res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 }
-console.log("Whats going on?", process.env.NODE_ENV);
+console.log("Whats going on?", res);
 app.listen(port, () => console.log(`Server running on port ${port}`));
