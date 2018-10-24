@@ -6,13 +6,15 @@ import './registerServiceWorker'
 import VueYoutube from 'vue-youtube'
 import * as VueGoogleMaps from 'vue2-google-maps';
 
+const googleAPI = require('../config/keys').googleAPIKEY;
+
 Vue.config.productionTip = false
 
 Vue.use(VueYoutube)
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyADAT64SMWOP7ee4cEOgW8tMYNL673MeDQ',
+    key: googleAPI,
     libraries: "places"
   }
 })

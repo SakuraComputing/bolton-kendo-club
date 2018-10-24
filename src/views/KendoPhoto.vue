@@ -1,10 +1,11 @@
 <template>
     <div class="kendo-photo">
         <h1>Kendo Photographs</h1>
-        
+        <div>1. Kyoto Taikai</div>
         <div class="image">
             <img v-for="img in images" v-bind:src="img" v-bind:key="img" alt="No image">
         </div>
+        <div>2. Wilf Swindell's sensei founder KNMS</div>
     </div>    
 </template>
 
@@ -12,7 +13,7 @@
     export default {
         data() {
             return {
-                images:['https://i0.wp.com/kenshi247.net/wp-content/uploads/2016/12/2016-kyoto1.jpg?w=800&ssl=1','https://www.jsnw.org.uk/photos/storage/cache/images/000/769/033-DSC-0403,medium_large.1463599525.jpg']
+                images:['/img/photos/2016-kyoto-taikai.png','/img/photos/Wilf Swindells Sensei.jpg']
             }
         }
     }
