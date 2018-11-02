@@ -3,7 +3,7 @@
 exports[`KendoStudy.vue renders correctly 1`] = `
 <div class="kendo-study">
   <h1>Hanshi Says</h1>
-  <p>Sumi Sensei Hanshi Hachi-dan</p> <img src="https://www.kendoguide.org/wp-content/uploads/2011/06/Masatake-Sumi-sensei.jpg" alt="Sumi Sensei">
+  <p>Sumi Sensei Hanshi Hachi-dan</p> <img src="[object Object]" alt="Sumi Sensei">
   <p>To make ippon you need to meet the following criteria</p>
   <ul class="kendo-study-list">
     <li>1. Full Spirit</li>
