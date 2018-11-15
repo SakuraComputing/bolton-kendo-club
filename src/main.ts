@@ -6,7 +6,7 @@ import './registerServiceWorker'
 import VueYoutube from 'vue-youtube'
 import * as VueGoogleMaps from 'vue2-google-maps';
 
-const googleAPI = require('../config/keys').googleAPIKEY;
+// const googleAPI = require('../config/keys').googleAPIKEY;
 
 Vue.config.productionTip = false
 
