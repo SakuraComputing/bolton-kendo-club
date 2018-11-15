@@ -48,9 +48,9 @@
         <li>
           <router-link to="/videos">Kendo Videos</router-link>
         </li>
-        <li>
+        <!-- <li>
           <router-link to="/login">Login / Register</router-link><span v-if="isLoggedIn"> | <a @click="logout"></a></span>
-        </li>
+        </li> -->
     </ul>
     <router-view/>
   </div>
