@@ -14,16 +14,7 @@
     export default {
         data() {
             return {
-                images: [
-                    {
-                        img: '/img/photos/2016-kyoto-taikai.png',
-                        text: 'Kyoto Taikai'
-                    },
-                    {
-                        img: '/img/photos/Wilf Swindells Sensei.jpg',
-                        text: 'Wilf Swindells Sensei founder KNMS and northern Kendo in the UK'
-                    },
-                ]
+                images: ['/img/photos/2016-kyoto-taikai.png','/img/photos/Wilf Swindells Sensei.jpg']
             }
         }
     }
