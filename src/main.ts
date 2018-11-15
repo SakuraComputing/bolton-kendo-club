@@ -8,7 +8,9 @@ import * as VueGoogleMaps from 'vue2-google-maps';
 
 const googleAPI = require('../config/keys').googleAPIKEY;
 
-console.log("GoogleApI", googleAPI);
+console.log("GoogleApI", googleAPI, process.env.GOOGLE_API_KEY);
+
+
 
 Vue.config.productionTip = false
 
