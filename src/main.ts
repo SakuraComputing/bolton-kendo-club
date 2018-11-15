@@ -8,17 +8,16 @@ import * as VueGoogleMaps from 'vue2-google-maps';
 
 const googleAPI = require('../config/keys').googleAPIKEY;
 
-console.log("GoogleApI", googleAPI, process.env.VUE_APP_GOOGLE_API_KEY);
-
-
-
 Vue.config.productionTip = false
 
 Vue.use(VueYoutube)
 
+// TODO: This key needs to be accessed from the environment variables
+// The app is being replaced by a React one 
+// Will remove this from github when this is done
 Vue.use(VueGoogleMaps, {
   load: {
-    key: googleAPI,
+    key: 'AIzaSyADAT64SMWOP7ee4cEOgW8tMYNL673MeDQ',
     libraries: "places"
   }
 })
