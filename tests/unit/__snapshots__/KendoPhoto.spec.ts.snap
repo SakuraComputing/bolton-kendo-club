@@ -3,8 +3,6 @@
 exports[`KendoPhoto.vue renders correctly 1`] = `
 <div class="kendo-photo">
   <h1>Kendo Photographs</h1>
-  <div>1. Kyoto Taikai</div>
-  <div class="image"><img src="[object Object]" alt="No image"><img src="[object Object]" alt="No image"></div>
-  <div>2. Wilf Swindell's sensei founder KNMS</div>
+  <div class="image"><img src="/img/photos/2016-kyoto-taikai.png" alt="No image" height="496" width="717"><img src="/img/photos/kendo-keiko1-11-11-18.jpg" alt="No image" height="496" width="717"><img src="/img/photos/kendo-keiko11-11-18.jpg" alt="No image" height="496" width="717"><img src="/img/photos/kendo-remembrance-sunday.jpg" alt="No image" height="496" width="717"></div>
 </div>
 `;
