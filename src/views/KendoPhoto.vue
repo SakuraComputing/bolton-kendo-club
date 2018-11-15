@@ -1,12 +1,9 @@
 <template>
     <div class="kendo-photo">
         <h1>Kendo Photographs</h1>
-        <div>1. Kyoto Taikai</div>
         <div class="image">
-            <img v-for="img in images" v-bind:src="img" v-bind:key="img" alt="No image">
-            <!-- <p v-for="text in images" :key="img></p> -->
+            <img v-for="img in images" v-bind:src="img" v-bind:key="img" alt="No image" height="496" width="717">
         </div>
-        <div>2. Wilf Swindell's sensei founder KNMS</div>
     </div>    
 </template>
 
@@ -14,7 +11,12 @@
     export default {
         data() {
             return {
-                images: ['/img/photos/2016-kyoto-taikai.png','/img/photos/Wilf Swindells Sensei.jpg']
+                images: [
+                            '/img/photos/2016-kyoto-taikai.png',
+                            '/img/photos/kendo-keiko1-11-11-18.jpg',
+                            '/img/photos/kendo-keiko11-11-18.jpg',
+                            '/img/photos/kendo-remembrance-sunday.jpg'
+                        ]
             }
         }
     }
